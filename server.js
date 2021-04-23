@@ -1,25 +1,20 @@
-var bodyParser = require('body-parser');
-const express = require('express');
+// Dependencies needed
+const express = require("express");
+const fs = require("fs");
+const path = require("path");
 
+// express data will start the application
 const app = express();
-var PORT = process.env.PORT || 8080;
- 
-app.get('/', function (req, res) {
-  res.send('Hello World');
-})
+const PORT = process.env.PORT || 3000;
 
-// parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }))
- 
-// parse application/json
-app.use(bodyParser.json())
- 
-app.use(function (req, res) {
-  res.setHeader('Content-Type', 'text/plain')
-  res.write('you posted:\n')
-  res.end(JSON.stringify(req.body, null, 2))
-})
-  app.listen(PORT, function(){
-      console.log("App listening on PORT: " + PORT);
-  });
-  
+//will find and load data
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static(__dirname));
+
+//routes needed
+require('./routes/apiRoutes')(app);
+// app listening port
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+}); 
