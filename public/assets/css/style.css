@@ -31,11 +31,11 @@ html, body {
 .note-title {
   height: 50px;
   margin-top: 13px;
-  font-size: 3rem;
+  font-size: 6rem;
 }
 
 .note-title:read-only, .note-textarea:read-only {
-  color: #757575;
+  color: #413e3e;
 }
 
 .list-container .card {

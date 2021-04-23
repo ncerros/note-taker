@@ -2,9 +2,10 @@
   "name": "note-taker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,8 @@
   },
   "homepage": "https://github.com/ncerros/note-taker#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "inquirer": "^8.0.0",
-    "watch": "^1.0.2"
+    "inquirer": "^8.0.0"
   }
 }
