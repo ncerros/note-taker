@@ -1,9 +1,10 @@
 # note-taker
     An Express Backend app use to write, save, and delete notes.
-    Click on the img
-
 
 [![note-taker](https://img.youtube.com/vi/dkZq_46TLnA/0.jpg)](https://www.youtube.com/watch?v=dkZq_46TLnA)
+
+
+
 
 ## Description
     This is a very usuful app to write, save, and delete notes using Express Backend. Anyone who would like to keep track of important information, the app will provide the user access to keep organize and find information when need it.
