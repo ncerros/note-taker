@@ -32,8 +32,8 @@ var deleteNote = function(id) {
   })
 };  
 
-//renderActiveNote function will show or clear out any input
-var renderActiveNote = function() {
+//This function will show or clear out any input
+var renderAllActiveNote = function() {
   $saveNoteBtn.hide();
 
   if (typeof activeNote.id === "number") {
@@ -51,14 +51,14 @@ var renderActiveNote = function() {
 };
 
 // This function will manage inputs then save them and display them in the app
-var handleNoteSave = function() {
+var allHandleNoteSave = function() {
   var newNote = {
     title: $noteTitle.val(),
     text: $noteTitle.val()
   };
   saveNote(newNote);
   getMyRenderNotes();
-  renderActiveNote();
+  renderAllActiveNote();
 };
 
 //  it will clear out the event
@@ -74,19 +74,19 @@ if (activeNote.id === note) {
 
 deleteNote(note);
 getMyRenderNotes();
-renderActiveNote();
+renderAllActiveNote();
 };
 
 //activeNote will display its content
 var handleNoteView = function() {
 activeNote = $(this).data();
-renderActiveNote();
+renderAllActiveNote();
 };
 
 // it will clean all objects so the user enter new data
 var handleNewNoteView = function() {
 activeNote = {};
-renderActiveNote();
+renderAllActiveNote();
 };
 
 // it will display or hide when title or text notes are empty
@@ -130,7 +130,7 @@ return getNotes().then(function(data) {
 });
 };
 
-$saveNoteBtn.on("click", handleNoteSave);
+$saveNoteBtn.on("click", allHandleNoteSave);
 $noteList.on("click", ".list-group-item", handleNoteView);
 $newNoteBtn.on("click", handleNewNoteView);
 $noteList.on("click", ".delete-note", handleNoteDelete);

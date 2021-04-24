@@ -2,6 +2,10 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: rgb(224, 220, 220);
+}
+.container {
+  background: rgb(196, 194, 194);
 }
 
 .save-note {
@@ -16,26 +20,29 @@ html, body {
 }
 
 .note-textarea, .note-title {
-  color: #000000;
+  color: #fcf8f8;
   width: 100%;
   outline: none;
   border: none;
+  background: rgb(90, 92, 90);
 }
 
 .note-textarea {
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
+  background: rgb(57, 59, 57);
 }
 
 .note-title {
-  height: 50px;
-  margin-top: 13px;
-  font-size: 6rem;
+  height: 65px;
+  margin-top: 0px;
+  font-size: 3rem;
 }
 
 .note-title:read-only, .note-textarea:read-only {
-  color: #413e3e;
+  color: #ffffff;
+  
 }
 
 .list-container .card {
@@ -43,10 +50,12 @@ html, body {
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  background: rgb(57, 59, 57);;
 }
 
 .list-container {
   padding-left: 0;
+  
 }
 
 .list-container .list-group,
@@ -55,10 +64,11 @@ html, body {
   border-top: none;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+  
 }
 
 .list-container i {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 
@@ -67,5 +77,8 @@ html, body {
   border-right: none;
   padding: 20px;
   cursor: pointer;
+  background: rgb(90, 92, 90);
+  color: rgb(246, 248, 250);
+  
 }
   
