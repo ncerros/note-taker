@@ -1,7 +1,7 @@
 # note-taker
     An Express Backend app use to write, save, and delete notes.
 
-[![note-taker](https://img.youtube.com/vi/n_dkZq_46TLnA/0.jpg)](https://www.youtube.com/watch?v=dkZq_46TLnA)
+[![Note-Taker](https://img.youtube.com/vi/n_dkZq_46TLnA/0.jpg)](https://www.youtube.com/watch?v=dkZq_46TLnA)
 
 
 ## Description
