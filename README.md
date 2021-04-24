@@ -2,7 +2,11 @@
     An Express Backend app use to write, save, and delete notes.
 
 ## Gif
+<<<<<<< HEAD
     ![note taker app] {images/note-taker-app.gif}   
+=======
+     https://media.giphy.com/media/L0DHFrCzws6U6TWxWe/giphy.gif  
+>>>>>>> 32906079f35bec19006d5c7c7a62fffe0bffc59d
  
 
 ## Description
